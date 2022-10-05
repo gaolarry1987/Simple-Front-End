@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="icon" href="/public/favicon.ico" sizes="70x70" type="image/ico">
+    <link rel='stylesheet' href='/public/css/style.css' />
+  </head>
+  <body>
+    {{#if messages.error includeZero=false  }}
+    <div class="error"><strong>{{messages.error}}</strong></div>
+    {{/if}}
+    {{#if user includeZero=true  }}
+    <a class="logout" href="/auth/logout">Logout</a>
+    {{/if}}
+    
+    {{{body}}}
+  </body>
+</html>

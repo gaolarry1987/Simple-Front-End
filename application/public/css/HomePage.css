@@ -1,0 +1,21 @@
+body{
+display: grid;
+/* grid-template-rows: 1fr 1fr 1fr 1fr; */
+grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 100vw;
+
+}
+
+.square {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.square:hover{
+    opacity: 0.8;
+}

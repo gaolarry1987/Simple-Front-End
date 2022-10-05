@@ -1,0 +1,87 @@
+*,*::before, *::after{
+  box-sizing: border-box!important;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.logout{
+  padding:1rem;
+  background-color: #fff;
+  color:#333;
+  position:absolute;
+  top:1rem;
+  right:1rem;
+}
+.error{
+  padding:1rem;
+  background-color: red;
+  color:#fff;
+  position:absolute;
+  top:1rem;
+  left:1rem;
+}
+.row{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col{
+  width: 20%;
+  padding: 0.5rem;
+}
+.col img{
+  width: 100%;
+  height: 200px;
+}
+.col >div{
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+.search{
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  width: 500px;
+  max-width: 100%;
+}
+.detail{
+  display: flex;
+  padding: 1rem;
+}
+.detail >div:last-child{
+padding-left: 1rem;
+}
+.btn{
+  padding: 0.5rem;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+.comment-secion form{
+margin-bottom: 1rem;
+}
+.comment-secion textarea{
+width: 400px;
+background-color: #fff;
+padding: 1rem;
+display:block;
+}
+.comment{
+  padding: 0.5rem;
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  margin-bottom: 1rem;
+}

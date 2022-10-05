@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Image</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/postimage.css" />
+  </head>
+  <body>
+    <div class="container">
+        <form method="post" action="/posts/create" enctype="multipart/form-data"> 
+      <div class="title">Post Image</div>
+
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Your Image Title</span>
+          <input name="title" type="text" placeholder="Enter your Image Title" required />
+        </div>
+        <div class="input-box">
+          <span class="details">Image Description</span>
+          <textarea name="description" id="description" style="width: 100%;" rows="10"></textarea>
+        </div>
+        <div class="input-box">
+          <span class="details">Upload Image</span>
+          <input type="file" name="image" />
+        </div>
+        <div class="input-box">
+          <span class="details">User must accept UserPolicy</span>
+          <button type="button">Accept</button><button
+            type="button"
+          >Decline</button>
+          <a href="#">UserPolicy</a>
+        </div>
+
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

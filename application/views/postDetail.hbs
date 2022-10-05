@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Post</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/viewpost.css" />
+  </head>
+  <body>
+    
+    <div class="detail">
+      <div>
+      <img src="/public/uploads/Code1.PNG" style="width: 600px; height: 600px;">
+      </div>
+    <div>
+      <h3>{{image.title}}</h3>
+      <p>{{image.description}}</p>
+      <div class="comment-secion">
+        <form method="post" action="/comments/create">
+        <textarea name="comment" placeholder="Enter your comments" rows="4"></textarea>
+        <input name="imageid" value="{{image.id}}" type="hidden"/>
+        <button type="submit">submit</button>
+        </form>
+        {{#each comments}}
+        <div class="comment">
+          <strong>{{this.name}}</strong>
+          <span>{{this.created_on}}</span>
+          <p>{{this.content}}</p>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    </div>
+
+  </body>
+</html>

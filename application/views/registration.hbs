@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/registration.css"/>
+    <script defer type="text/javascript" src="/public/js/registration.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="title">Registration</div>
+    <form action="/auth/create-account" method="post">
+
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details" id="userid">User Name</span>
+                <input type="text" name="name" value="" class="username-input" placeholder="Enter your User Name" required>
+                <p class="error-username hidden" >Invalid Username</p>
+            </div>
+            <div class="input-box">
+                <span class="details" id="email">Email</span>
+                <input type="email" name="email" class="email-input" placeholder="Enter your Email" required>
+                <p class="error-email hidden">Invalid Email</p>
+            </div>
+            <div class="input-box">
+                <span class="details" id="password">Password</span>
+                <input type="password" name="password" class="password-input" placeholder="Enter your Password" required>
+                <p class="error-password hidden">Invalid Password</p>
+            </div>
+            <div class="input-box">
+                <span class="details" id="confirmpassword">Confirm Password</span>
+                <input type="password" name="confirmPassword" class="confirm-password-input" placeholder="Confrm your Password" required>
+                <p class="error-confirm hidden">Password doesn't match</p>
+            </div>
+            <br/>
+            <div class="input-box">
+                <span class="details" id="confirmage" required>Please confirm you are 13 years and older</span>
+                <input type="checkbox" name="confirmAge" class="age-confirmation" name="Age Confirmation" id="" required/>
+                <p class="error-age">Please confirm</p>
+
+            </div>
+            <br/>
+            <div class="input-box">
+                <span class="details" id="rulecheck" required>All users must accept TOS and Privacy rules</span>
+                <input type="checkbox" name="ruleCheck" class="rule-confirmation"  id="" required/>
+                <p class="error-rules">Please accept</p>
+            </div>
+            <div class="input-box">
+                <span class="details"><a href="#">TOS and privacy rules</a></span>
+            </div>
+        </div>
+    
+    <br/>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+    </form>
+</html>
+</div>

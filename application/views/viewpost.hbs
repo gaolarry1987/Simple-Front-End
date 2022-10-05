@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Post</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/viewpost.css" />
+  </head>
+  <body>
+    <div class="search-container">
+        <form method="get" action="">
+      <input name="search" class="search" placeholder="seach for an image" />
+      <button type="submit">search</button>
+      </form>
+    </div>
+    <div>
+        <a class="btn" href="posts/create">create post</a>
+    </div>
+    <div class="row">
+      {{#each images}}
+        <div class="col">
+          <div>
+            <img src="/public/uploads/{{this.image}}" alt="" />
+            <h4>{{this.title}}</h4>
+            <a class="btn" href="/posts/{{this.id}}">view</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </body>
+</html>
